@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<DebugSymbolsOutputPath>../../build/DebugSymbols/</DebugSymbolsOutputPath>
+		<DocumentationFile>../../build/APIDocumentation/McProtocolNextDemo.xml</DocumentationFile>
+		<ApplicationIcon>logo.ico</ApplicationIcon>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<InformationalVersion>1.0.0-beta</InformationalVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="logo-RemoveBG.png" />
+		<None Remove="logo.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="HandyControl" Version="3.5.1" />
+		<PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="WPF-UI" Version="4.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\McProtocolNext\McProtocolNext.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="logo-RemoveBG.png" />
+		<Resource Include="logo.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\Images\**" />
+		<Resource Include="Resources\Icons\**" />
+		<Resource Include="Resources\Cursors\Dark\**" />
+		<Resource Include="Resources\Cursors\Light\**" />
+		<Content Include="Resources\Fonts\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>ResourcesCustom.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Resources.zh.resx" />
+		<EmbeddedResource Update="Resources\Resources.zh-TW.resx" />
+	</ItemGroup>
+
+</Project>

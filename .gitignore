@@ -1,0 +1,83 @@
+# 忽略编译和运行时生成的文件夹
+bin/
+obj/
+TestResults/
+
+# 忽略Visual Studio临时文件、用户特定文件和所有生成的文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2015/2017 缓存/项目文件
+.vs/
+
+# Windows image文件
+Thumbs.db
+
+# ReSharper 文件
+_ReSharper*/
+
+# TeamCity 项目
+_TeamCity*
+
+# 工具生成的文件夹
+Generated_Code/
+
+# NuGet 生成的文件
+packages/*
+*.nupkg
+*.snupkg
+
+# 忽略Visual Studio Code文件夹
+.vscode/
+
+# 忽略常见的macOS文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 忽略Windows缓存文件
+ehthumbs.db
+ehthumbs_vista.db
+
+# 忽略日志文件
+*.log
+
+# docfx
+docs/api/
+docs/_site/
+
+# 忽略 Node.js 依赖
+node_modules/
+
+# 忽略 npm 缓存目录
+.npm/
+
+# 忽略操作系统生成的临时文件
+*.tmp
+*.temp
+*.swp
+
+# 忽略 IDE 特定文件
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 忽略构建输出
+dist/
+build/
+public/build/
+
+# 忽略环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 忽略 Yarn 缓存目录
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz

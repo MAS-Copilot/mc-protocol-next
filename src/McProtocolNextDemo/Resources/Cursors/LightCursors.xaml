@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Cursor x:Key="Pointer">Light/pointer.cur</Cursor>
+    <Cursor x:Key="Help">Light/help.cur</Cursor>
+    <Cursor x:Key="Hand">Light/hand.cur</Cursor>
+    <Cursor x:Key="Horz">Light/horz.cur</Cursor>
+    <Cursor x:Key="Move">Light/move.cur</Cursor>
+    <Cursor x:Key="Person">Light/person.cur</Cursor>
+    <Cursor x:Key="Pin">Light/pin.cur</Cursor>
+    <Cursor x:Key="Alternate">Light/alternate.cur</Cursor>
+    <Cursor x:Key="Beam">Light/beam.cur</Cursor>
+    <Cursor x:Key="Dgn1">Light/dgn1.cur</Cursor>
+    <Cursor x:Key="Dgn2">Light/dgn2.cur</Cursor>
+    <Cursor x:Key="Handwriting">Light/handwriting.cur</Cursor>
+    <Cursor x:Key="Precision">Light/precision.cur</Cursor>
+    <Cursor x:Key="unavailable">Light/unavailable.cur</Cursor>
+    <Cursor x:Key="vert">Light/vert.cur</Cursor>
+
+    <Cursor x:Key="Working">Light/working.ani</Cursor>
+    <Cursor x:Key="Busy">Light/busy.ani</Cursor>
+</ResourceDictionary>

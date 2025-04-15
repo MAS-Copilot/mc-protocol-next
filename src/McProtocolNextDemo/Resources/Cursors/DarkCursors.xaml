@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Cursor x:Key="Pointer">Dark/pointer.cur</Cursor>
+    <Cursor x:Key="Help">Dark/help.cur</Cursor>
+    <Cursor x:Key="Hand">Dark/hand.cur</Cursor>
+    <Cursor x:Key="Horz">Dark/horz.cur</Cursor>
+    <Cursor x:Key="Move">Dark/move.cur</Cursor>
+    <Cursor x:Key="Person">Dark/person.cur</Cursor>
+    <Cursor x:Key="Pin">Dark/pin.cur</Cursor>
+    <Cursor x:Key="Alternate">Dark/alternate.cur</Cursor>
+    <Cursor x:Key="Beam">Dark/beam.cur</Cursor>
+    <Cursor x:Key="Dgn1">Dark/dgn1.cur</Cursor>
+    <Cursor x:Key="Dgn2">Dark/dgn2.cur</Cursor>
+    <Cursor x:Key="Handwriting">Dark/handwriting.cur</Cursor>
+    <Cursor x:Key="Precision">Dark/precision.cur</Cursor>
+    <Cursor x:Key="unavailable">Dark/unavailable.cur</Cursor>
+    <Cursor x:Key="vert">Dark/vert.cur</Cursor>
+
+    <Cursor x:Key="Working">Dark/working.ani</Cursor>
+    <Cursor x:Key="Busy">Dark/busy.ani</Cursor>
+</ResourceDictionary>

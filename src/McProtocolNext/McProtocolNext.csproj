@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<DebugSymbolsOutputPath>../../build/DebugSymbols/</DebugSymbolsOutputPath>
+		<DocumentationFile>../../build/APIDocumentation/McProtocolNext.xml</DocumentationFile>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<InformationalVersion>1.0.0-beta</InformationalVersion>
+		<Authors>MAS(厦门威光)研发部</Authors>
+		<Company>MAS(厦门威光)</Company>
+		<PackageId>McProtocolNext</PackageId>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<Description>下一代高性的能异步三菱 PLC MC 协议通信库</Description>
+		<RepositoryUrl>https://github.com/MAS-Copilot/mc-protocol-next</RepositoryUrl>
+		<PackageTags>PLC;MC;Mitsubishi;Communication;McProtocol</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>现代化 MC 协议实现，为高性能三菱 PLC 通信设计</PackageReleaseNotes>
+		<Copyright>Copyright (c) MAS(厦门威光) Corporation. All rights reserved.</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>

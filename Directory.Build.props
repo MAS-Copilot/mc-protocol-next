@@ -1,0 +1,20 @@
+<Project>
+	<PropertyGroup>
+		<MSBuildNodeReuse>true</MSBuildNodeReuse>
+	</PropertyGroup>
+
+	<Target Name="MovePdbFiles" AfterTargets="Publish">
+		<ItemGroup>
+			<PdbFiles Include="$(PublishDir)**\*.pdb" />
+		</ItemGroup>
+		<MakeDir Directories="$(MSBuildThisFileDirectory)/build/DebugSymbols/" />
+		<Copy SourceFiles="@(PdbFiles)"
+		  DestinationFolder="$(MSBuildThisFileDirectory)/build/DebugSymbols/" />
+		<Delete Files="@(PdbFiles)" />
+	</Target>
+
+	<ItemGroup Condition="!$(MSBuildProjectDirectory.Contains('tests'))">
+		<Analyzer Include="$(MSBuildThisFileDirectory)libs\MAS.Analyzers.dll" />
+	</ItemGroup>
+
+</Project>
